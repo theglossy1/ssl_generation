@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo The following files are now the following in the 'tmp' directory:
+for a in $(ls -1 tmp/ca-cert* tmp/server-[ck]*); do
+#for a in $(ls -1 tmp); do
+ #echo -e "\t$(basename $a)"
+ echo -e "\t$(basename $a)"
+done
